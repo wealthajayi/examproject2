@@ -1,0 +1,36 @@
+*{box-sizing: border-box;-webkit-tap-highlight-color: transparent;}
+
+body{
+    margin: 0; min-height: 100vh; background: navy; color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px;
+    padding: 20px; user-select: none;
+}
+
+#head{
+    display: flex; justify-content: space-between; width: 100%; max-width: 400px;
+    font-size: 20px;color: yellow;
+    font-weight: bold;
+}
+
+canvas{
+    width: 100%; max-width: 400px; height: auto;
+    background: black; border: 2px solid #1a1aa6; border-radius: 6px; touch-action: none;
+}
+#pad{
+    display: grid; grid-template-columns: repeat(3, 60px); grid-template-rows: repeat(3, 60px); gap: 6px;
+}
+#pad button{
+    border: #2a3cff; background: #0b0b30; color: yellow;
+    font-size: 26px; border-radius: 12px;
+    touch-action: none;
+    display: flex; align-items: center; justify-content: center;
+    line-height: 1;
+}
+#pad button:active {background-color: #2a3cff; }
+#up { grid-column: 2; grid-row: 1; }
+#left { grid-column: 1; grid-row: 2; }
+#right { grid-column: 3; grid-row: 2; }
+#down { grid-column: 2; grid-row: 3; }
+#help { font-size: 15px; color: yellow;
+text-align: center;}
